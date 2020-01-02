@@ -1,0 +1,263 @@
+/* COLORS (Adobe compound)
+light blue (base) = #c4d9ff
+lavender =          #9589cc
+dark blue =         #4a3999
+light orange =      #ffcc85
+puce =              #cca689
+  */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cca689;
+  background-color: #9589cc;
+  background-image: url("../img/cloudy-blue-sky.jpg");
+  /*display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;*/
+}
+.wrapper {
+  margin: 2rem 2rem 0rem 2rem;
+  padding: 0;
+  background-color: #c4d9ff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+header {
+  /*border: .3rem solid blue;*/
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+header img, #circle {
+  border-radius: 100%;
+  margin: .6rem;
+  height: 100px;
+  width: 100px;
+}
+#circle {
+  background: aliceblue;
+  border-radius: 50%
+}
+header h1 {
+  padding-top: .5rem;
+}
+nav {
+  /*border: .3rem dashed red;*/
+  flex-basis: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  background-color: #ffcc85;
+  opacity: 85%;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  /*border: 2px dotted green;*/
+  list-style-type: none;
+  flex-basis: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+li {
+  width: 7rem;
+  text-align: center;
+  padding: .3rem .2rem;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+section p{
+  margin: 1rem 1rem;
+  padding: 0;
+  font-size: .9rem;
+}
+p {
+  margin: 1rem auto;
+  padding: .5rem;
+  color: #4a3999;
+}
+.comment-div {
+  margin: 1rem 2rem;
+}
+#comment {
+  color: aliceblue;
+  padding: 0 1rem;
+}
+.form-div {
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
+fieldset {
+  margin: 1rem;
+  font-size: .8rem;
+}
+label, input:not([type="radio"]), textarea {
+  display: block;
+  margin-bottom: .3rem; 
+}
+input[radio] {
+  display: inline;
+}
+input{
+  background-color: aliceblue;
+  color: black;
+}
+#message {
+  background-color: aliceblue;
+  color: black;
+  height: 10rem;
+  width: 15rem;
+}
+.link {
+  display: block;
+  width: 2rem;
+  font-size: .8rem;
+  padding-left: 1rem;
+  margin-top: .6rem;
+}
+button {
+	font-size: .9rem;
+	margin: 1rem 1rem .5rem 1rem;
+	background-color: #9589cc;
+	color: white;
+	border: none;
+	padding: .5rem 1rem;
+  border-radius: 10px;
+}
+button:hover {
+	background-color: white;
+	color: #9589cc;
+}
+.form-div p {
+  font-size: .7rem;
+}
+form p {
+  color: #9589cc;
+  font-size: .7rem;
+  margin: 0 2rem;
+}
+.index-div {
+  margin: 2rem 5rem;
+}
+.section-cat {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.cats-div {
+  margin: 0 2rem;
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #4a3999;
+}
+.cats-div img {
+  margin: .2rem;
+  padding:0;
+}
+.section.cat h3 {
+  margin: 1rem auto;
+  text-align: center;
+}
+.cats-table table {
+  margin: 1rem 1rem;
+  border-collapse: collapse;
+  border: 1px dashed #4a3999;
+}
+.cats-table th, td {
+  border: 1px dashed #4a3999;
+  padding: .5rem 3rem;
+  margin: 0;
+  text-align: center;
+}
+.cats-table th {
+  background-color: #9589cc;
+}
+aside {
+font-size: .7rem;
+padding: .5rem;
+margin-right: 6.8rem;
+}
+aside ul {
+flex-flow:column nowrap;
+text-align: right;
+}
+article {
+  border: 2px solid #9589cc;
+  border-radius: 0 5% 5% 0;
+  margin: 1rem;
+  width: 60%;
+  float: left;
+}
+article h5 {
+  margin: .5rem;
+  padding: .5rem;
+}
+article img{
+  margin: .5rem;
+  padding: .5rem;
+  float: left;
+}
+article:after, article img:after {
+  content: "";
+  display: table;
+}
+.kids-p {
+  margin-top: 2rem;
+  text-align: center;
+}
+.kids-div{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.kids-card {
+  height: 20rem;
+  flex-basis: 25%;
+  background-color: #9589cc;
+  margin: 1rem;
+  border-radius: 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.kids-book-img {
+  height: 10rem;
+  width: 7.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.kids-card p {
+  padding: 0;
+  margin: 0 auto;
+}
+.amazon-logo {
+  height: 1.5rem;
+  width: 2rem;
+}
+.amazon-logo:hover {
+  border: 2px dotted aliceblue;
+}
