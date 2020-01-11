@@ -17,23 +17,49 @@ body {
   color: #cca689;
   background-color: #9589cc;
   background-image: url("../img/cloudy-blue-sky.jpg");
-  /*display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;*/
 }
 .wrapper {
-  margin: 2rem 2rem 0rem 2rem;
+  width: 90%;
+  margin: 3rem auto;
   padding: 0;
   background-color: #c4d9ff;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
 }
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+section {
+  width: 70%;
+  margin: 1rem auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section p{
+  margin: 1rem 1rem;
+  padding: 0;
+  font-size: .9rem;
+}
+p {
+  margin: 1rem auto;
+  padding: .5rem;
+  color: #4a3999;
+}
+/*HEADER*/
 header {
   /*border: .3rem solid blue;*/
   flex-basis: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
 }
 header img, #circle {
@@ -42,18 +68,15 @@ header img, #circle {
   height: 100px;
   width: 100px;
 }
-#circle {
-  background: aliceblue;
-  border-radius: 50%
-}
 header h1 {
   padding-top: .5rem;
 }
+/*NAV*/
 nav {
   /*border: .3rem dashed red;*/
   flex-basis: 100%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   background-color: #ffcc85;
   opacity: 85%;
@@ -67,7 +90,7 @@ ul {
   list-style-type: none;
   flex-basis: 90%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 li {
@@ -76,39 +99,21 @@ li {
   padding: .3rem .2rem;
   margin: 0;
 }
-a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  font-weight: bold;
-}
-section p{
-  margin: 1rem 1rem;
-  padding: 0;
-  font-size: .9rem;
-}
-p {
-  margin: 1rem auto;
-  padding: .5rem;
-  color: #4a3999;
-}
+/*INDEX PAGE*/
 .comment-div {
-  margin: 1rem 2rem;
+  margin: 0 0 1rem 2rem;
 }
 #comment {
   color: aliceblue;
+  text-shadow: 2px 2px 2px #9589cc;
   padding: 0 1rem;
 }
-.form-div {
-  margin-left: 2rem;
-  margin-right: 5rem;
+/*COMMENT PAGE*/
+#circle {
+  background: aliceblue;
+  border-radius: 50%
 }
 fieldset {
-  margin: 1rem;
   font-size: .8rem;
 }
 label, input:not([type="radio"]), textarea {
@@ -130,9 +135,7 @@ input{
 }
 .link {
   display: block;
-  width: 2rem;
-  font-size: .8rem;
-  padding-left: 1rem;
+  font-size: 1rem;
   margin-top: .6rem;
 }
 button {
@@ -156,75 +159,70 @@ form p {
   font-size: .7rem;
   margin: 0 2rem;
 }
-.index-div {
-  margin: 2rem 5rem;
-}
-.section-cat {
+/*CAT PAGE*/
+.cats {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 .cats-div {
-  margin: 0 2rem;
-  padding: 1rem 0;
+  flex: 0 0 90%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   border: 1px dashed #4a3999;
 }
-.cats-div img {
-  margin: .2rem;
-  padding:0;
-}
-.section.cat h3 {
-  margin: 1rem auto;
-  text-align: center;
+.cats-div img, video {
+  margin: .5rem 1rem;
 }
 .cats-table table {
-  margin: 1rem 1rem;
+  flex: 0 0 80%;
+  margin: 2rem auto;
   border-collapse: collapse;
   border: 1px dashed #4a3999;
 }
 .cats-table th, td {
   border: 1px dashed #4a3999;
-  padding: .5rem 3rem;
+  padding: .5rem 2rem;
   margin: 0;
   text-align: center;
 }
 .cats-table th {
   background-color: #9589cc;
 }
-aside {
-font-size: .7rem;
-padding: .5rem;
-margin-right: 6.8rem;
+/*changes for smaller screens*/
+@media
+only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {border: 1px solid #ccc;}
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 6px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  td:nth-of-type(1):before {content: "Color:";}
+  td:nth-of-type(2):before {content: "Breed:";}
+  td:nth-of-type(3):before {content: "Age:";}
+  td:nth-of-type(4):before {content: "Status:";}
 }
-aside ul {
-flex-flow:column nowrap;
-text-align: right;
-}
-article {
-  border: 2px solid #9589cc;
-  border-radius: 0 5% 5% 0;
-  margin: 1rem;
-  width: 60%;
-  float: left;
-}
-article h5 {
-  margin: .5rem;
-  padding: .5rem;
-}
-article img{
-  margin: .5rem;
-  padding: .5rem;
-  float: left;
-}
-article:after, article img:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+/*KIDS PAGE*/
 .kids-p {
   margin-top: 2rem;
   text-align: center;
@@ -261,4 +259,53 @@ article:after, article img:after {
 }
 .amazon-logo:hover {
   border: 2px dotted aliceblue;
+}
+/*OUTSIDE PAGE*/
+.outside {
+  flex: 0 0 80%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+aside {
+  font-size: .8rem;
+  padding: .5rem;
+  flex: 0 0 5%;
+  }
+  aside ul {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  aside li, a {
+    width: 7rem;
+  }
+  article {
+    border: 2px solid #9589cc;
+    border-radius: 0 5% 5% 0;
+    margin: .7rem 0;
+    flex: 0 0 75%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  article img{
+    margin: .5rem;
+    padding: .5rem;
+  }
+  article h5 {
+    margin: .5rem;
+    padding: .5rem;
+    flex: 0 0 40%;
+    color: #9589cc;
+    text-shadow: 1px 1px 1px #cca689;
+  }
+  /*changes for smaller screens*/
+@media
+only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-width: 1024px){
+  article h5 {
+    margin: .5rem;
+    padding: .5rem;
+    flex: 0 0 80%;
+    color: #9589cc;
+    text-shadow: 1px 1px 1px #cca689;
+  }
 }

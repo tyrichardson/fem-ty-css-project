@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>fem-cats</title>
+    <title>ty-cats</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../css/style.css" rel="stylesheet">
@@ -20,15 +20,19 @@
           <a href="outside.html"><li>outside</li></a>
         </ul>
       </nav>
-      <section class="section-cat">
+      <section class="cats">
         <div>
           <h3>Just images and video of my cats, and a table of their attributes.</h3>
         </div>
         <div class="cats-div">
+          <!--REDO WITH PICTURE ELEMENTS FOR MEDIA QUERIES TO RESIZE IMAGES-->
           <img src="../img/cats-3-heads.JPG" alt="Three gray cats cuddling on a cat bed">
           <img src="../img/cats-computing.JPG" alt="Petting a sleepy gray cat next to the laptop">
+          <picture id="small">
+            <source srcset="../img/KittyBowl-ANIMATION-small.gif" media="(max-width: 800px)">
+            <img src="../img/KittyBowl-ANIMATION.gif" alt="Animated GIF of a gray kitty playing in a brown bowl">
+        </picture>
           <img src="../img/clyde-undercover.JPG" alt="Big orange tabby cat peeking out from beneath the blankets">
-          <img src="../img/Kitty Bowl-ANIMATION.gif" alt="Animated GIF of a gray kitty playing in a brown bowl">
           <video controls width="300">
             <source src="../img/cats-bathtub-bell.mp4"
               type="video/mp4" alt="Video of a gray kitten playing in the empty bathtub with a blue bell">
