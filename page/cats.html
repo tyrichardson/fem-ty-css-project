@@ -4,40 +4,53 @@
     <title>ty-cats</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link href="../css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <img src="http://placekitten.com/100/100" alt="image of a cute kitten" />
+        <img class= "headerImg" src="http://placekitten.com/100/100" alt="image of a cute kitten" />
         <h1>Ty Richardson</h1>
       </header>
       <nav>
         <ul>
           <a class="home-a" href="../index.html"><li>home</li></a>
           <li>cats</li>
+          <a href="dogs.html"><li>dogs</li></a>
           <a href="kids.html"><li>kids</li></a>
           <a href="outside.html"><li>outside</li></a>
         </ul>
       </nav>
-      <section class="cats">
-        <div>
-          <h3>Just images and video of my cats, and a table of their attributes.</h3>
+      <section>
+        <div  class="cats">
+          <h3>A carousel of cats, followed by a table of their attributes.</h3>
         </div>
-        <div class="cats-div">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
           <!--REDO WITH PICTURE ELEMENTS FOR MEDIA QUERIES TO RESIZE IMAGES-->
-          <img src="../img/cats-3-heads.JPG" alt="Three gray cats cuddling on a cat bed">
-          <img src="../img/cats-computing.JPG" alt="Petting a sleepy gray cat next to the laptop">
-          <picture id="small">
-            <source srcset="../img/KittyBowl-ANIMATION-small.gif" media="(max-width: 800px)">
-            <img src="../img/KittyBowl-ANIMATION.gif" alt="Animated GIF of a gray kitty playing in a brown bowl">
+          <img class="swiper-slide" src="../img/cats-3-heads.JPG" alt="Three gray cats cuddling on a cat bed">
+          <img class="swiper-slide" src="../img/cats-computing.JPG" alt="Petting a sleepy gray cat next to the laptop">
+          <picture id="small" class="swiper-slide">
+            <source class="swiper-slide" srcset="../img/KittyBowl-ANIMATION-small.gif" media="(max-width: 800px)">
+            <img class="swiper-slide" src="../img/KittyBowl-ANIMATION.gif" alt="Animated GIF of a gray kitty playing in a brown bowl">
         </picture>
-          <img src="../img/clyde-undercover.JPG" alt="Big orange tabby cat peeking out from beneath the blankets">
-          <video controls width="300">
-            <source src="../img/cats-bathtub-bell.mp4"
+          <img class="swiper-slide" src="../img/clyde-undercover.JPG" alt="Big orange tabby cat peeking out from beneath the blankets">
+          <video controls width="300" class="swiper-slide">
+            <source class="swiper-slide" src="../img/cats-bathtub-bell.mp4"
               type="video/mp4" alt="Video of a gray kitten playing in the empty bathtub with a blue bell">
           </video>
-        </div>
+            <!-- If we need pagination -->
+      </div>
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+      </div>
         <div class="cats-table">
           <table>
             <thead>
@@ -90,5 +103,8 @@
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

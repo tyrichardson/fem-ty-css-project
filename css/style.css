@@ -53,6 +53,7 @@ p {
   margin: 1rem auto;
   padding: .5rem;
   color: #4a3999;
+  text-shadow: 1px 1px 1px #9589cc;
 }
 /*HEADER*/
 header {
@@ -62,14 +63,18 @@ header {
   flex-flow: row wrap;
   justify-content: center;
 }
-header img, #circle {
+.headerImg, #circle {
   border-radius: 100%;
   margin: .6rem;
   height: 100px;
   width: 100px;
+  z-index: 10;
+  cursor: pointer;
 }
 header h1 {
   padding-top: .5rem;
+  text-shadow: 2px 2px 2px #4a3999;
+
 }
 /*NAV*/
 nav {
@@ -105,7 +110,7 @@ li {
 }
 #comment {
   color: aliceblue;
-  text-shadow: 2px 2px 2px #9589cc;
+  text-shadow: 2px 2px 2px #4a3999;
   padding: 0 1rem;
 }
 /*COMMENT PAGE*/
@@ -115,6 +120,7 @@ li {
 }
 fieldset {
   font-size: .8rem;
+  text-shadow: 1px 1px 1px #9589cc;
 }
 label, input:not([type="radio"]), textarea {
   display: block;
@@ -138,6 +144,9 @@ input{
   font-size: 1rem;
   margin-top: .6rem;
 }
+.linked-in-link {
+  text-decoration: underline;
+}
 button {
 	font-size: .9rem;
 	margin: 1rem 1rem .5rem 1rem;
@@ -153,35 +162,31 @@ button:hover {
 }
 .form-div p {
   font-size: .7rem;
+  text-shadow: 1px 1px 1px #4a3999;
 }
 form p {
   color: #9589cc;
+  text-shadow: 1px 1px 1px #9589cc;  text-shadow: 1px 1px 1px #4a3999;
   font-size: .7rem;
   margin: 0 2rem;
 }
 /*CAT PAGE*/
 .cats {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  text-align: center;
+  color: #4a3999;
+  font-size: 1rem;
   text-shadow: 1px 1px 1px #9589cc;
 }
-.cats-div {
-  flex: 0 0 90%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  border: 1px dashed #4a3999;
-}
-.cats-div img, video {
-  margin: .5rem 1rem;
+.swiper-container {
+  width: 600px;
+  height: 400px;
 }
 .cats-table table {
   flex: 0 0 80%;
   margin: 2rem auto;
   border-collapse: collapse;
   border: 1px dashed #4a3999;
+  text-shadow: 1px 1px #9589cc;
 }
 .cats-table th, td {
   border: 1px dashed #4a3999;
@@ -224,21 +229,38 @@ only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-wi
   td:nth-of-type(4):before {content: "Status:";}
 }
 /*KIDS PAGE*/
+.section-kids {
+  flex: 0 0 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
 .kids-p {
-  margin-top: 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  color: #4a3999;  text-shadow: 1px 1px 1px #9589cc;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.kids-emoji {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
 .kids-div{
+  flex: 0 0 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 1rem;
 }
 .kids-card {
   height: 20rem;
-  flex-basis: 25%;
+  flex: 0 0 29%;
   background-color: #9589cc;
-  margin: 1rem;
+  margin: .75rem;
   border-radius: 10%;
   display: flex;
   flex-flow: column nowrap;
@@ -248,8 +270,7 @@ only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-wi
 .kids-book-img {
   height: 10rem;
   width: 7.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin: 1.5rem .5rem 0 .5rem;
 }
 .kids-card p {
   padding: 0;
