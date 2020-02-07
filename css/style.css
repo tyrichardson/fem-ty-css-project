@@ -147,7 +147,7 @@ input{
 .linked-in-link {
   text-decoration: underline;
 }
-button {
+.button-submit {
 	font-size: .9rem;
 	margin: 1rem 1rem .5rem 1rem;
 	background-color: #9589cc;
@@ -156,7 +156,7 @@ button {
 	padding: .5rem 1rem;
   border-radius: 10px;
 }
-button:hover {
+.button-submit:hover {
 	background-color: white;
 	color: #9589cc;
 }

@@ -4,15 +4,10 @@ html {
 *, *:before, *:after { 
   box-sizing: inherit;
 }
-body { 
-  padding: 0; margin: 0;
+.calc-header {
+  margin-top: 2rem;
 }
-h1 {
-  margin: 20px auto;
-  text-align: center;
-  color: #895116;
-}
-.wrapper {
+.calc-wrapper {
   width: 400px;
   margin: 20px auto;
   background-color: black;

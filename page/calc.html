@@ -5,17 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>JS Calculator</title>
-  <link rel="stylesheet" href="./calc-styles.css">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/calc-styles.css">
 </head>
 <body>
-  <h1>JS Calculator Project</h1>
-  <div class="wrapper">
+  <header class="calc-header">
+    <img class="headerImg"  src="../img/equal-2718210_640.png" alt="image of page author" />
+    <h1>JS Calculator Project</h1>
+  </header>
+  <nav>
+    <ul>
+      <a href="../index.html"><li>home</li></a href="../index.html">
+      <a href="../page/cats.html"><li>cats</li></a>
+      <a href="../page/dogs.html"><li>dogs</li></a>
+      <a href="../page/kids.html"><li>kids</li></a>
+      <a href="../page/outside.html"><li>outside</li></a>
+      <li>calculator</li>
+    </ul>
+  </nav>
 
-    <section class="screen">
+  <div class="calc-wrapper">
+
+    <div class="screen">
       0
-    </section>
+    </div>
 
-    <section class="calc-buttons">
+    <div class="calc-buttons">
       <div class="calc-button-row">
         <button class="calc-button double">C</button>
         <button class="calc-button">←</button>
@@ -43,10 +58,10 @@
         <button class="calc-button triple">0</button>
         <button class="calc-button">=</button>
       </div>
-    </section>
+    </div>
   
   </div>
 
-  <script src="./calc-script.js"></script>
+  <script src="../script/calc-script.js"></script>
 </body>
 </html>
