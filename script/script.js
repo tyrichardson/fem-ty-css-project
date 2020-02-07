@@ -1,4 +1,3 @@
-"use strict";
 console.log('js is running');
 
 const {
