@@ -1,22 +1,29 @@
-html { 
-  box-sizing: border-box; 
+html {
+  box-sizing: border-box;
 }
-*, *:before, *:after { 
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+
 .calc-header {
   margin-top: 2rem;
 }
+
 .nav-calc {
   width: 90%;
   margin: 0 auto;
 }
+
 .calc-wrapper {
   width: 400px;
   margin: 20px auto;
   background-color: black;
   color: white;
 }
+
 .screen {
   text-align: right;
   font-family: 'Courier New', Courier, monospace;
@@ -24,12 +31,14 @@ html {
   font-size: 40px;
   font-weight: bold;
 }
+
 .calc-button-row {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-bottom: 0.5%;
 }
+
 .calc-button {
   background-color: #d8d9db;
   color: black;
@@ -38,25 +47,32 @@ html {
   height: 100px;
   flex-basis: 24.5%;
 }
+
 .calc-button:hover {
   background-color: #ebebeb;
 }
+
 .calc-button:active {
   background-color: #bbbcbe;
 }
+
 .double {
   flex-basis: 49.76%;
 }
+
 .triple {
   flex-basis: 74.8%;
 }
+
 .calc-button:last-child {
   background-color: #df974c;
   color: white;
 }
+
 .calc-button:last-child:hover {
   background-color: #dfb07e;
 }
+
 .calc-button:last-child:active {
   background-color: #895116;
 }

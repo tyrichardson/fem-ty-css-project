@@ -1,4 +1,3 @@
-"use strict";
 console.log("dogScript is running");
 
 const BREED_OBJECT = "https://dog.ceo/api/breeds/list/all";

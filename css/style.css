@@ -9,15 +9,20 @@ puce =              #cca689
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #cca689;
   background-color: #9589cc;
   background-image: url("../img/cloudy-blue-sky.jpg");
 }
+
 .wrapper {
   width: 90%;
   margin: 3rem auto;
@@ -27,16 +32,19 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
 }
+
 a {
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
+
 a:hover {
   color: #ffffff;
   text-decoration: underline;
   font-weight: bold;
 }
+
 section {
   width: 70%;
   margin: 1rem auto;
@@ -44,17 +52,20 @@ section {
   flex-flow: row wrap;
   justify-content: center;
 }
-section p{
+
+section p {
   margin: 1rem 1rem;
   padding: 0;
   font-size: .9rem;
 }
+
 p {
   margin: 1rem auto;
   padding: .5rem;
   color: #4a3999;
   text-shadow: 1px 1px 1px #9589cc;
 }
+
 /*HEADER*/
 header {
   /*border: .3rem solid blue;*/
@@ -63,7 +74,9 @@ header {
   flex-flow: row wrap;
   justify-content: center;
 }
-.headerImg, #circle {
+
+.headerImg,
+#circle {
   border-radius: 100%;
   margin: .6rem;
   height: 100px;
@@ -71,11 +84,13 @@ header {
   z-index: 10;
   cursor: pointer;
 }
+
 header h1 {
   padding-top: .5rem;
   text-shadow: 2px 2px 2px #4a3999;
 
 }
+
 /*NAV*/
 nav {
   /*border: .3rem dashed red;*/
@@ -88,6 +103,7 @@ nav {
   margin: 0;
   padding: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -98,78 +114,97 @@ ul {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+
 li {
   width: 7rem;
   text-align: center;
   padding: .3rem .2rem;
   margin: 0;
 }
+
 /*INDEX PAGE*/
-.comment-div {
-  margin: 0 0 1rem 2rem;
+.comment-div, .comment-div-comment {
+  margin: 1rem 0 0 5rem;
 }
-#comment {
+
+.comment-div, #comment {
   color: aliceblue;
   text-shadow: 2px 2px 2px #4a3999;
   padding: 0 1rem;
 }
+
 /*COMMENT PAGE*/
 #circle {
   background: aliceblue;
   border-radius: 50%
 }
+
 fieldset {
   font-size: .8rem;
   text-shadow: 1px 1px 1px #9589cc;
 }
-label, input:not([type="radio"]), textarea {
+
+label,
+input:not([type="radio"]),
+textarea {
   display: block;
-  margin-bottom: .3rem; 
+  margin-bottom: .3rem;
 }
+
 input[radio] {
   display: inline;
 }
-input{
+
+input {
   background-color: aliceblue;
   color: black;
 }
+
 #message {
   background-color: aliceblue;
   color: black;
   height: 10rem;
   width: 15rem;
 }
+
 .link {
   display: block;
   font-size: 1rem;
   margin-top: .6rem;
 }
+
 .linked-in-link {
   text-decoration: underline;
 }
+
 .button-submit {
-	font-size: .9rem;
-	margin: 1rem 1rem .5rem 1rem;
-	background-color: #9589cc;
-	color: white;
-	border: none;
-	padding: .5rem 1rem;
+  font-size: .9rem;
+  margin: 1rem 1rem .5rem 1rem;
+  background-color: #9589cc;
+  color: white;
+  border: none;
+  padding: .5rem 1rem;
   border-radius: 10px;
 }
+
 .button-submit:hover {
-	background-color: white;
-	color: #9589cc;
+  background-color: white;
+  color: #9589cc;
 }
+
 .form-div p {
   font-size: .7rem;
   text-shadow: 1px 1px 1px #4a3999;
 }
+
 form p {
   color: #9589cc;
-  text-shadow: 1px 1px 1px #9589cc;  text-shadow: 1px 1px 1px #4a3999;
+  text-shadow: 1px 1px 1px #9589cc;
+  text-shadow: 1px 1px 1px #4a3999;
   font-size: .7rem;
   margin: 0 2rem;
 }
+
 /*CAT PAGE*/
 .cats {
   text-align: center;
@@ -177,10 +212,12 @@ form p {
   font-size: 1rem;
   text-shadow: 1px 1px 1px #9589cc;
 }
+
 .swiper-container {
   width: 600px;
   height: 400px;
 }
+
 .cats-table table {
   flex: 0 0 80%;
   margin: 2rem auto;
@@ -188,33 +225,49 @@ form p {
   border: 1px dashed #4a3999;
   text-shadow: 1px 1px #9589cc;
 }
-.cats-table th, td {
+
+.cats-table th,
+td {
   border: 1px dashed #4a3999;
   padding: .5rem 2rem;
   margin: 0;
   text-align: center;
 }
+
 .cats-table th {
   background-color: #9589cc;
 }
+
 /*changes for smaller screens*/
-@media
-only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  table, thead, tbody, th, td, tr {
+@media only screen and (max-width: 900px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
     display: block;
   }
+
   thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  tr {border: 1px solid #ccc;}
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
   td {
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 50%;
   }
+
   td:before {
     position: absolute;
     top: 6px;
@@ -223,11 +276,24 @@ only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-wi
     padding-right: 10px;
     white-space: nowrap;
   }
-  td:nth-of-type(1):before {content: "Color:";}
-  td:nth-of-type(2):before {content: "Breed:";}
-  td:nth-of-type(3):before {content: "Age:";}
-  td:nth-of-type(4):before {content: "Status:";}
+
+  td:nth-of-type(1):before {
+    content: "Color:";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Breed:";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Age:";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Status:";
+  }
 }
+
 /*KIDS PAGE*/
 .section-kids {
   flex: 0 0 100%;
@@ -235,27 +301,32 @@ only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-wi
   flex-flow: column wrap;
   justify-content: flex-start;
 }
+
 .kids-p {
   text-align: center;
-  color: #4a3999;  text-shadow: 1px 1px 1px #9589cc;
+  color: #4a3999;
+  text-shadow: 1px 1px 1px #9589cc;
   font-size: 1.25rem;
   font-weight: bold;
   padding: 0;
   margin: 0;
 }
+
 .kids-emoji {
   text-align: center;
   font-size: 2rem;
   padding: 0;
   margin: 0;
 }
-.kids-div{
+
+.kids-div {
   flex: 0 0 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 1rem;
 }
+
 .kids-card {
   height: 20rem;
   flex: 0 0 29%;
@@ -267,22 +338,27 @@ only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-wi
   justify-content: space-around;
   align-items: center;
 }
+
 .kids-book-img {
   height: 10rem;
   width: 7.5rem;
   margin: 1.5rem .5rem 0 .5rem;
 }
+
 .kids-card p {
   padding: 0;
   margin: 0 auto;
 }
+
 .amazon-logo {
   height: 1.5rem;
   width: 2rem;
 }
+
 .amazon-logo:hover {
   border: 2px dotted aliceblue;
 }
+
 /*OUTSIDE PAGE*/
 .outside {
   flex: 0 0 80%;
@@ -290,40 +366,48 @@ only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-wi
   flex-flow: column wrap;
   justify-content: flex-start;
 }
+
 aside {
   font-size: .8rem;
   padding: .5rem;
   flex: 0 0 5%;
-  }
-  aside ul {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-  aside li, a {
-    width: 7rem;
-  }
-  article {
-    border: 2px solid #9589cc;
-    border-radius: 0 5% 5% 0;
-    margin: .7rem 0;
-    flex: 0 0 75%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  article img{
-    margin: .5rem;
-    padding: .5rem;
-  }
-  article h5 {
-    margin: .5rem;
-    padding: .5rem;
-    flex: 0 0 40%;
-    color: #9589cc;
-    text-shadow: 1px 1px 1px #cca689;
-  }
-  /*changes for smaller screens*/
-@media
-only screen and (max-width: 900px), (min-device-width: 768px) and (max-device-width: 1024px){
+}
+
+aside ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+aside li,
+a {
+  width: 7rem;
+}
+
+article {
+  border: 2px solid #9589cc;
+  border-radius: 0 5% 5% 0;
+  margin: .7rem 0;
+  flex: 0 0 75%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+article img {
+  margin: .5rem;
+  padding: .5rem;
+}
+
+article h5 {
+  margin: .5rem;
+  padding: .5rem;
+  flex: 0 0 40%;
+  color: #9589cc;
+  text-shadow: 1px 1px 1px #cca689;
+}
+
+/*changes for smaller screens*/
+@media only screen and (max-width: 900px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
   article h5 {
     margin: .5rem;
     padding: .5rem;

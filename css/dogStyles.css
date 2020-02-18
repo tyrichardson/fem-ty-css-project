@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -13,6 +14,7 @@ html {
   flex-flow: column nowrap;
   justify-content: center;
 }
+
 .div-dogs {
   flex: 0 0 90%;
   display: flex;
@@ -24,43 +26,53 @@ html {
   font-size: 1rem;
   text-shadow: 1px 1px 1px #9589cc;
 }
+
 #breed-select {
   font-size: 1rem;
 }
+
 .spinner {
   text-align: center;
   font-size: 3rem;
   flex: 0 0 100%;
   z-index: 10;
 }
+
 .hidden {
   display: none;
 }
+
 @keyframes spin {
   from {
     transform: rotateZ(0deg);
   }
+
   to {
     transform: rotateZ(360deg);
   }
 }
+
 .spin {
   animation: spin 0.75s ease-in-out infinite;
 }
+
 .dog-photo {
   flex: 0 0 80%;
   margin: 1rem auto;
 }
+
 .dogImg {
   max-width: 30rem;
   max-height: 30rem;
 }
+
 @media (min-width: 450px) and (max-width: 700px) {
   .dogImg {
     max-width: 15rem;
     max-height: 15rem;
   }
 }
+
 @media (min-width: 200px) and (max-width: 450px) {
   .dogImg {
     max-width: 10rem;

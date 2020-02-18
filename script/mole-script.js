@@ -5,8 +5,8 @@ let score = 0;
 const getSadInterval = () =>
   Date.now() + 1000;
 
-  const getHungryInterval = () =>
-  Date.now() + Math.floor(Math.random() * 3000) + 2000;
+const getHungryInterval = () =>
+  Date.now() + Math.floor(Math.random() * 3000) + 1000;
 
 const getKingStatus = () =>
   Math.random() > .9;
@@ -15,7 +15,7 @@ const getKingStatus = () =>
 return number that is 0 to 18000 plus 2000, which is 0 to 18 seconds plus 2 seconds -- so will always be at least 2 seconds and maybe up to 20 seconds
 */
 const getGoneInterval = () =>
-  Date.now() + Math.floor(Math.random() * 18000) + 2000;
+  Date.now() + Math.floor(Math.random() * 18000) + 1000;
 
 //Array of mole holes
 const MOLES = [{

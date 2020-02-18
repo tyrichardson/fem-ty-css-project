@@ -28,7 +28,8 @@ header {
   margin: 0 auto;
 }
 
-section, .bg {
+section,
+.bg {
   background-image: url(../img/background.png);
   background-repeat: no-repeat;
   width: 100%;
@@ -90,10 +91,18 @@ section, .bg {
   width: 1660px;
 }
 
+.feed-a-mole-text {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
 @media (max-width: 1460px) {
   .worm-box {
     width: 100%;
   }
+
   .worm {
     width: 1280px;
   }

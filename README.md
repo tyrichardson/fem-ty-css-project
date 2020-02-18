@@ -1,3 +1,3 @@
 ##HTML/CSS DEMO
 
-This site is a demo/review of HTML and CSS.
+This site is a demo of HTML, CSS, and Vanilla Javascript.

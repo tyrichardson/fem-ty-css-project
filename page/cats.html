@@ -1,112 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>ty-cats</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link href="../css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <img class= "headerImg" src="http://placekitten.com/100/100" alt="image of a cute kitten" />
-        <h1>Ty Richardson</h1>
-      </header>
-      <nav>
-        <ul>
-          <a class="home-a" href="../index.html"><li>home</li></a>
-          <li>cats</li>
-          <a href="dogs.html"><li>dogs</li></a>
-          <a href="kids.html"><li>kids</li></a>
-          <a href="outside.html"><li>outside</li></a>
-          <a href="calc.html"><li>calculator</li></a>
-          <a href="mole.html"><li>game</li></a>
-        </ul>
-      </nav>
-      <section>
-        <div  class="cats">
-          <h3>A carousel of cats, followed by a table of their attributes.</h3>
-        </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
+
+<head>
+  <title>ty-cats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <img class="headerImg" src="http://placekitten.com/100/100" alt="image of a cute kitten" />
+      <h1>Ty Richardson</h1>
+    </header>
+    <nav>
+      <ul>
+        <a class="home-a" href="../index.html">
+          <li>home</li>
+        </a>
+        <li>cats</li>
+        <a href="dogs.html">
+          <li>dogs</li>
+        </a>
+        <a href="kids.html">
+          <li>kids</li>
+        </a>
+        <a href="outside.html">
+          <li>outside</li>
+        </a>
+        <a href="calc.html">
+          <li>calculator</li>
+        </a>
+        <a href="mole.html">
+          <li>game</li>
+        </a>
+      </ul>
+    </nav>
+    <section>
+      <div class="cats">
+        <h3>A carousel of cats, followed by a table of their attributes.</h3>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
           <!--REDO WITH PICTURE ELEMENTS FOR MEDIA QUERIES TO RESIZE IMAGES-->
           <img class="swiper-slide" src="../img/cats-3-heads.JPG" alt="Three gray cats cuddling on a cat bed">
           <img class="swiper-slide" src="../img/cats-computing.JPG" alt="Petting a sleepy gray cat next to the laptop">
           <picture id="small" class="swiper-slide">
             <source class="swiper-slide" srcset="../img/KittyBowl-ANIMATION-small.gif" media="(max-width: 800px)">
-            <img class="swiper-slide" src="../img/KittyBowl-ANIMATION.gif" alt="Animated GIF of a gray kitty playing in a brown bowl">
-        </picture>
-          <img class="swiper-slide" src="../img/clyde-undercover.JPG" alt="Big orange tabby cat peeking out from beneath the blankets">
+            <img class="swiper-slide" src="../img/KittyBowl-ANIMATION.gif"
+              alt="Animated GIF of a gray kitty playing in a brown bowl">
+          </picture>
+          <img class="swiper-slide" src="../img/clyde-undercover.JPG"
+            alt="Big orange tabby cat peeking out from beneath the blankets">
           <video controls width="300" class="swiper-slide">
-            <source class="swiper-slide" src="../img/cats-bathtub-bell.mp4"
-              type="video/mp4" alt="Video of a gray kitten playing in the empty bathtub with a blue bell">
+            <source class="swiper-slide" src="../img/cats-bathtub-bell.mp4" type="video/mp4"
+              alt="Video of a gray kitten playing in the empty bathtub with a blue bell">
           </video>
-            <!-- If we need pagination -->
-      </div>
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-      </div>
-        <div class="cats-table">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Color</th>
-                <th scope="col">Breed</th>
-                <th scope="col">Age</th>
-                <th scope="col">Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" id="camille">Camille (Mama)</th>
-                <td>Grey</td>
-                <td>Domestic Shorthair</td>
-                <td>2 yr</td>
-                <td>Living</td>
-              </tr>
-              <tr>
-                <th scope="row">Fuzzy Dunlop</th>
-                <td>Grey</td>
-                <td>Domestic Shorthair</td>
-                <td>1 yr</td>
-                <td>Living</td>
-              </tr>
-              <tr>
-                <th scope="row">Shackleton</th>
-                <td>Grey</td>
-                <td>Domestic Shorthair</td>
-                <td>1 yr</td>
-                <td>Living</td>
-              </tr>
-              <tr>
-                <th scope="row">Nora Wallace</th>
-                <td>Grey</td>
-                <td>Domestic Shorthair</td>
-                <td>1 yr</td>
-                <td>Living</td>
-              </tr>
-              <tr>
-                <th scope="row" id="clyde">Clyde</th>
-                <td>Orange</td>
-                <td>Domestic Shorthair</td>
-                <td>7 yr</td>
-                <td>Deceased</td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- pagination -->
         </div>
-      </section>
-    </div>
-    <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="../script/script.js"></script>
-  </body>
+        <div class="swiper-pagination"></div>
+
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <div class="cats-table">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Color</th>
+              <th scope="col">Breed</th>
+              <th scope="col">Age</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" id="camille">Camille (Mama)</th>
+              <td>Grey</td>
+              <td>Domestic Shorthair</td>
+              <td>2 yr</td>
+              <td>Living</td>
+            </tr>
+            <tr>
+              <th scope="row">Fuzzy Dunlop</th>
+              <td>Grey</td>
+              <td>Domestic Shorthair</td>
+              <td>1 yr</td>
+              <td>Living</td>
+            </tr>
+            <tr>
+              <th scope="row">Shackleton</th>
+              <td>Grey</td>
+              <td>Domestic Shorthair</td>
+              <td>1 yr</td>
+              <td>Living</td>
+            </tr>
+            <tr>
+              <th scope="row">Nora Wallace</th>
+              <td>Grey</td>
+              <td>Domestic Shorthair</td>
+              <td>1 yr</td>
+              <td>Living</td>
+            </tr>
+            <tr>
+              <th scope="row" id="clyde">Clyde</th>
+              <td>Orange</td>
+              <td>Domestic Shorthair</td>
+              <td>7 yr</td>
+              <td>Deceased</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="../script/script.js"></script>
+</body>
+
 </html>
