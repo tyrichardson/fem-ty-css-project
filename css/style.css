@@ -39,7 +39,7 @@ a {
   padding: 0;
 }
 
-a:hover {
+a:hover, .launch-date-div:hover {
   color: #ffffff;
   text-decoration: underline;
   font-weight: bold;
@@ -123,14 +123,37 @@ li {
 }
 
 /*INDEX PAGE*/
-.comment-div, .comment-div-comment {
+.comment-div {
   margin: 1rem 0 0 5rem;
 }
 
-.comment-div, #comment {
+.index-div {
+  margin-bottom: 0;
+}
+
+.date-div {
+  margin: 0 3rem 0 0;
+}
+
+.launch-date-div, #comment {
   color: aliceblue;
   text-shadow: 2px 2px 2px #4a3999;
   padding: 0 1rem;
+}
+
+.launch-date-div, .happened {
+  margin: 0 3rem 0 5rem;
+  padding: 0;
+}
+
+.happened-today {
+  color: darkgoldenrod;
+  text-shadow: none;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none;
 }
 
 /*COMMENT PAGE*/
@@ -205,8 +228,9 @@ form p {
   margin: 0 2rem;
 }
 
-/*CAT PAGE*/
+/*CATS PAGE*/
 .cats {
+  flex: 0 0 100%;
   text-align: center;
   color: #4a3999;
   font-size: 1rem;
@@ -214,8 +238,8 @@ form p {
 }
 
 .swiper-container {
-  width: 600px;
-  height: 400px;
+  width: 400px;
+  height: 325px;
 }
 
 .cats-table table {
@@ -395,6 +419,7 @@ article {
 article img {
   margin: .5rem;
   padding: .5rem;
+  max-height: 250px;
 }
 
 article h5 {
