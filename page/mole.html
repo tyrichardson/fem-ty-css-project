@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed-a-Mole-Game</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mole-style.css">
+</head>
+
+<body>
+
+  <header>
+    <img class="headerImg" src="../img/mole-fed.png" alt="image of page author" />
+    <h1>Ty Richardson</h1>
+  </header>
+  <nav class="nav-mole">
+    <ul>
+      <a href="../index.html"><li>home</li></a>
+      <a href="../page/cats.html">
+        <li>cats</li>
+      </a>
+      <a href="../page/dogs.html">
+        <li>dogs</li>
+      </a>
+      <a href="../page/kids.html">
+        <li>kids</li>
+      </a>
+      <a href="../page/outside.html">
+        <li>outside</li>
+      </a>
+      <a href="../page/calc.html">
+        <li>calculator</li>
+      </a>
+        <li>game</li>
+    </ul>
+  </nav>
+
+  <section class="bg">
+
+    <div class="worm-box">
+      <div class="worm-container" style="width:5%">
+        <img class="worm" src="../img/worm.png" alt="worm score meter">
+      </div>
+    </div>
+
+    <div class="hole-container">
+      <div class="hole" id="hole-0">
+        <img data-index="0" src="../img/mole-hungry.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-1">
+        <img data-index="1" src="../img/mole-fed.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-2">
+        <img data-index="2" src="../img/mole-leaving.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-3">
+        <img data-index="3" src="../img/king-mole-hungry.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-4">
+        <img data-index="4" src="../img/king-mole-fed.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-5">
+        <img data-index="5" src="../img/king-mole-leaving.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-6">
+        <img data-index="6" src="../img/mole-hungry.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-7">
+        <img data-index="7" src="../img/king-mole-hungry.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-8">
+        <img data-index="8" src="../img/mole-fed.png" alt="mole" class="mole" />
+      </div>
+    </div>
+    <div class="hole-container">
+      <div class="hole" id="hole-9">
+        <img data-index="9" src="../img/king-mole-fed.png" alt="mole" class="mole" />
+      </div>
+    </div>
+
+  </section>
+
+  <img class="win hide" src="../img/win.png" alt="You are a winner!" />
+
+  <script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="../script/script.js"></script>
+  <script src="../script/mole-script.js"></script>
+</body>
+
+</html>

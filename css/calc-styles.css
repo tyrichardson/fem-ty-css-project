@@ -7,6 +7,10 @@ html {
 .calc-header {
   margin-top: 2rem;
 }
+.nav-calc {
+  width: 90%;
+  margin: 0 auto;
+}
 .calc-wrapper {
   width: 400px;
   margin: 20px auto;
